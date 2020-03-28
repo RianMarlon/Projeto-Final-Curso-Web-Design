@@ -223,8 +223,45 @@ img{
     color: #FFFFFF;
 }
 
+.last-articles__title{
+    background-color: #63C6AE;
+    padding: 5px 0;
+}
+
+.last-articles__title h2{
+    font-size: 24px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.last-articles__thumbs{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 0;
+}
+
+.last-articles__thumbs img{
+    width: 100%;
+    display: block;
+}
+
+.laptop-slides{
+    background-color: #242A2C;
+    padding: 125px 0 100px;
+    width: 100%;
+    overflow: auto;
+}
 
 
+.slideshow{
+    white-space: nowrap;
+}
+
+.slideshow figure{
+    display: inline-block;
+}
 
 
 

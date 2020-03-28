@@ -123,7 +123,7 @@ img{
     margin-top: 2.5em;
 }
 
-.people-cards__card{
+.people-cards__card + .people-cards__card{
     margin-top: 1.5em;
 }
 
@@ -254,7 +254,6 @@ img{
     overflow: auto;
 }
 
-
 .slideshow{
     white-space: nowrap;
 }
@@ -263,9 +262,32 @@ img{
     display: inline-block;
 }
 
+.quote-container {
+    background-color: #63C6AE;
+    padding: 50px 0;
+    border-bottom: 12px solid #48B9A1;
+}
 
+.quote-slideshow{
+    
+}
 
+.quote-slideshow h2{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: normal;
+}
 
+.quote-slideshow figurecaption{
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+}
+
+.no-js .quote-slideshow figure + figure{
+    margin-top: 5em;
+}
 
 
 

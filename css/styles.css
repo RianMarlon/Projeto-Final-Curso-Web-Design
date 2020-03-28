@@ -38,17 +38,23 @@ body{
 .header__nav li{
     list-style-type: none;
     background-color: #242C2C;
-    padding: 25px 0;
     text-align: center;
     border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
 }
 
-.header__nav li a{
+.header__nav a{
     color: #586165;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
+    display: block;
+    padding: 25px 0;
+    transition: 0.5s linear;
+}
+
+.header__nav a:hover{
+    color: #63C6AE;
 }
 
 

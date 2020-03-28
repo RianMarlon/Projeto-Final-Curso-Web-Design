@@ -4,6 +4,10 @@ body{
     font-family: 'Open Sans', 'Sintony', sans-serif;
 }
 
+img{
+    max-width: 100%;
+}
+
 .header{
     background-color: #FFF;
     width: 100%;
@@ -57,5 +61,49 @@ body{
     color: #63C6AE;
 }
 
+.hero{
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url(../imagens/01.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.hero__title{
+    background-color: #63C6AE;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 30px 20px;
+}
+
+.hero__title abbr{
+    text-decoration: none;
+}
+
+.hero__text{
+    background-color: #242A2C;
+    margin: 5px 30px 35px;
+    color: #FFF;
+    padding: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.hero__btn{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 15px 25px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 

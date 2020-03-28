@@ -2,10 +2,18 @@
 body{
     margin: 0;
     font-family: 'Open Sans', 'Sintony', sans-serif;
+    line-height: 1.5em;
 }
 
 img{
     max-width: 100%;
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .header{
@@ -65,15 +73,16 @@ img{
     height: 80vh;
     padding: 40px 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
     background: 
         linear-gradient(45deg , white 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat, 
         linear-gradient(-45deg, white 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat,
         url(../imagens/01.jpg) center no-repeat;
     background-size: 40px 40px, 40px 40px, cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .hero__title{
@@ -109,4 +118,42 @@ img{
     font-weight: 600;
     text-transform: uppercase;
 }
+
+.people-cards{
+    margin-top: 2.5em;
+}
+
+.people-cards__card{
+    
+}
+
+.people-cards__image{
+    width: 100%;
+}
+
+.people-cards__avatar{
+    margin: -55px auto;
+    width: 88px;
+    height: 88px;
+    overflow: hidden;
+}
+
+.people-cards__content{
+    text-align: center;
+    padding: 40px 25px 10px;
+    border-left: 1px solid #DBe1E7;
+    
+}
+.people-cards__title{
+    color: #737C85;
+    font-size: 21px;
+}
+
+.people-cards__text{
+    color: #929DA5;
+    font-size: 14px;
+}
+
+
+
 

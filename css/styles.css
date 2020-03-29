@@ -25,6 +25,7 @@ img{
     color: #FFF;
     font-weight: bold;
     float: left;
+    text-align: right;
 }
 
 .header__btnMenu{
@@ -359,6 +360,12 @@ img{
 
     .people-cards__card + .people-cards__card{
         margin: 0;
+    }
+    
+    .content .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
     }
     
 }

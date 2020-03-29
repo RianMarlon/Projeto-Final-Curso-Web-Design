@@ -36,10 +36,14 @@ img{
 
 .header__btnMenu{
     float: right;
-    margin: 1em 1.5em;
+    margin: 1em 1.5em 0;
     background-color: transparent;
     border: none;
     font-size: 16px;
+}
+
+.js .header__nav{
+    transition: max-height 0.5s;
 }
 
 .header__btnMenu .fas{
@@ -358,6 +362,10 @@ img{
         width: 70%;
         clear: none;
         max-width: 800px;
+    }
+    
+    .js .header__nav{
+        overflow: visible
     }
     
     .header__nav ul{

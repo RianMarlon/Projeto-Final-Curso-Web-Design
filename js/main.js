@@ -1,11 +1,14 @@
-var body = document.querySelector("body");
 
-body.classList.remove("no-js");
-body.classList.add("js");
+var $body = document.querySelector("body");
 
-var btnMenu = document.querySelector(".header__btnMenu");
-btnMenu.removeAttribute("style");
+$body.classList.remove("no-js");
+$body.classList.add("js");
 
+var menu = new Menu({
+    container: '.header__nav',
+    toggleBtn: '.header__btnMenu',
+    widthEnabled: 1024
+});
 
 
 

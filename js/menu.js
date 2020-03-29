@@ -11,18 +11,26 @@ function Menu(config){
     var _this = this;
     
     this.btn.removeAttribute("style");
-    closeMenu();
+    //closeMenu();
     
-    window.addEventListener("resize", () => {
-        if(window.innerWidth > this.maxWidth){
-            this.nav.removeAttribute("style");
-            _opened = false;
-        }
-        
-        else if(!this.nav.getAttribute("style")){
+    if (this.maxWidth){
+    
+        window.addEventListener("resize", () => {
+            if(window.innerWidth > this.maxWidth){
+                this.nav.removeAttribute("style");
+                _opened = false;
+            }
+
+            else if(!this.nav.getAttribute("style")){
+                closeMenu();
+            }
+        });
+
+        if (window.innerWidth <= this.maxWidth){
             closeMenu();
         }
-    })
+    
+    }
     
     this.btn.addEventListener("click", openOrClose);
     

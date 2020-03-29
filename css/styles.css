@@ -12,6 +12,12 @@ img{
 .header{
     background-color: #FFF;
     width: 100%;
+    position: absolute;
+}
+
+.js .header{
+    position: fixed;
+    width: 100%;
 }
 
 .logo-text{
@@ -141,7 +147,7 @@ img{
 }
 
 .people-cards__card:hover .people-cards__avatar img{
-    transform: translateY(-50.5%);
+    margin-top: -101%;
 }
 
 .people-cards__card:hover .people-cards__title{
@@ -159,7 +165,7 @@ img{
 .people-cards__avatar{
     margin: -55px auto;
     width: 88px;
-    height: 87.5px;
+    height: 87px;
     overflow: hidden;
 }
 
@@ -304,7 +310,7 @@ img{
 
 .footer__logo{
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .footer p{

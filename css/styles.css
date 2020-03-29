@@ -173,13 +173,13 @@ img{
 
 .people-cards__title{
     color: #737C85;
-    font-size: 21px;
+    font-size: 24px;
     font-weight: normal;
 }
 
 .people-cards__text{
     color: #929DA5;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .content{
@@ -190,14 +190,14 @@ img{
 
 .content h3{
     color: #737C85;
-    font-size: 21px;
+    font-size: 24px;
     padding-top: 40px;
     font-weight: 400;
 }
 
 .content p{
     color: #929DA5;
-    font-size: 14px;
+    font-size: 18px;
     word-spacing: 3px;
 }
 
@@ -285,9 +285,9 @@ img{
     font-weight: normal;
 }
 
-.quote-slideshow figurecaption{
+.quote-slideshow figcaption{
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -302,6 +302,15 @@ img{
     font-size: 14px;
 }
 
+.footer__logo{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.footer p{
+    font-size: 18px;
+}
+
 .footer__links li{
     list-style: none;
 }
@@ -310,7 +319,8 @@ img{
     color: #454E51;
     display: block;
     font-weight: 600;
-    text-decoration: none;   
+    text-decoration: none;  
+    font-size: 18px;
 }
 
 @media screen and (min-width: 1024px){
@@ -370,6 +380,14 @@ img{
     
     .last-articles__thumbs{
         grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .footer .container{
+        display: flex;
+    }
+    
+    .footer .container > *{
+        margin: 1.5em;
     }
     
 }

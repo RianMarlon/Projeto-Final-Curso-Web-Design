@@ -41,9 +41,7 @@ function Menu(config){
         }
         
         else {
-            
             closeMenu();
-            
         }
     }
     

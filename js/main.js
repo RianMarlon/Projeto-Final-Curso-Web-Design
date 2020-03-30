@@ -10,12 +10,12 @@ var menu = new Menu({
     widthEnabled: 979.99
 });
 
-
-
-
-
-
-
+var carouselImgs = new Carousel({
+    container: ".laptop-slides .slideshow",
+    itens: "figure",
+    btnPrev: ".prev",
+    btnNext: ".next"
+});
 
 
 

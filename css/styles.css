@@ -18,6 +18,7 @@ img{
 .js .header{
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 
 .logo-text{
@@ -270,6 +271,52 @@ img{
     display: block;
 }
 
+.js .laptop-slides{
+    overflow: hidden;
+}
+
+.js .laptop-slides .slideshow{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 950px;
+}
+
+.js .laptop-slides .slideshow figure{
+    position: absolute;
+    opacity: 0;
+    width: 85%;
+    top: 0;
+    left: 0;
+    margin-left: 7.5%;
+    
+    transition: opacity 1s;
+    
+}
+
+.js .laptop-slides .slideshow figure.show{
+    opacity: 1;
+    position: static;
+    margin-left: 7.5%;
+}
+
+.js .laptop-slides .prev, .js .laptop-slides .next{
+    z-index: 3;
+    position: absolute;
+    top: 42%;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.js .laptop-slides .prev{
+    left: 10px;
+}
+
+.js .laptop-slides .next{
+    right: 10px;
+}
+
+
 .laptop-slides{
     background-color: #242A2C;
     padding: 125px 0 100px;
@@ -280,6 +327,7 @@ img{
 .slideshow{
     white-space: nowrap;
 }
+
 
 .slideshow figure{
     display: inline-block;
@@ -402,6 +450,15 @@ img{
     .last-articles__thumbs{
         grid-template-columns: repeat(6, 1fr);
     }
+    
+    .js .laptop-slides .prev{
+        left: 0;
+    }
+
+    .js .laptop-slides .next{
+        right: 0;
+    }
+
     
     .footer .container{
         display: flex;

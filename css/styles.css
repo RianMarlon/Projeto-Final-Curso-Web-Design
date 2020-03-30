@@ -340,7 +340,7 @@ img{
     font-size: 16px;
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 979.99px){
     
     .header{
         position: fixed;

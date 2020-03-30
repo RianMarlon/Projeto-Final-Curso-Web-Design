@@ -1,9 +1,9 @@
 
 function Menu(config){
     
-    this.nav = (typeof config.container === 'string') ? document.querySelector(config.container): config.container;
+    this.nav = (typeof config.container === "string") ? document.querySelector(config.container): config.container;
     
-    this.btn = (typeof config.toggleBtn === 'string') ? document.querySelector(config.toggleBtn): config.toggleBtn;
+    this.btn = (typeof config.toggleBtn === "string") ? document.querySelector(config.toggleBtn): config.toggleBtn;
     
     this.maxWidth = config.widthEnabled || false;
     
@@ -11,7 +11,6 @@ function Menu(config){
     var _this = this;
     
     this.btn.removeAttribute("style");
-    //closeMenu();
     
     if (this.maxWidth){
     
@@ -20,7 +19,8 @@ function Menu(config){
                 this.nav.removeAttribute("style");
                 _opened = false;
             }
-
+            
+            /* Verificando se há algum atributo 'style' inline no HTML */
             else if(!this.nav.getAttribute("style")){
                 closeMenu();
             }
@@ -51,13 +51,9 @@ function Menu(config){
         
         var _top = _this.nav.getBoundingClientRect().top + "px";
         
-        var _style = {
-            maxHeight: 'calc(100vh - ' + _top + ')',
-            overflow: 'hidden'
-        };
-        
-        _this.nav.style.maxHeight = _style.maxHeight;
-        _this.nav.style.overflow = _style.overflow;
+        /* Os atributos styles do javascript, serão transformados em atributos inline no HTML */
+        _this.nav.style.maxHeight = "calc(100vh - " + _top + ")";
+        _this.nav.style.overflow = "hidden";
         
         _opened = true;
         
@@ -65,14 +61,9 @@ function Menu(config){
 
     function closeMenu(){
         
-        var _style = {
-            maxHeight: '0',
-            overflow: 'hidden'
-        };
-        
-        _this.nav.style.maxHeight = _style.maxHeight;
-        _this.nav.style.overflow = _style.overflow;
-        
+        /* Os atributos styles do javascript, serão transformados em atributos inline no HTML */
+        _this.nav.style.maxHeight = "0";
+        _this.nav.style.overflow = "hidden";    
         
         _opened = false;
         

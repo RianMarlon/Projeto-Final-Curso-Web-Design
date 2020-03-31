@@ -159,7 +159,7 @@ img{
 }
 
 .people-cards__card:hover .people-cards__avatar img{
-    margin-top: -101%;
+    transform: translateY(-50%);
 }
 
 .people-cards__card:hover .people-cards__title{
@@ -306,6 +306,7 @@ img{
     top: 42%;
     cursor: pointer;
     color: #FFFFFF;
+    font-size: 16px;
 }
 
 .js .laptop-slides .prev{
@@ -332,6 +333,74 @@ img{
 .slideshow figure{
     display: inline-block;
 }
+
+.js .quote-slideshow{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+    box-sizing: border-box;
+    padding: 0 50px;
+    
+}
+
+.js .quote-slideshow figure{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 40px;
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 30px;
+    
+    transition: opacity 1s;
+    
+}
+
+.js .quote-slideshow figure.show{
+    opacity: 1;
+    position: static;
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+.js .quote-slideshow figure h2{
+    margin-top: 0;
+}
+
+.js .quote-slideshow .prev, .js .quote-slideshow .next{
+    z-index: 3;
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 12px 3px 13px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+    transition: all 0.5s linear;
+}
+
+.js .quote-slideshow .prev:hover, .js .quote-slideshow .next:hover{
+    color: #BBBBBB;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.js .quote-slideshow .prev{
+    left: 1%;
+}
+
+.js .quote-slideshow .next{
+    right: 1%;
+}
+
 
 .quote-container {
     background-color: #63C6AE;
@@ -458,7 +527,6 @@ img{
     .js .laptop-slides .next{
         right: 0;
     }
-
     
     .footer .container{
         display: flex;

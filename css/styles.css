@@ -1,7 +1,7 @@
 
 body{
     margin: 0;
-    font-family: 'Open Sans', 'Sintony', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.5em;
 }
 
@@ -30,7 +30,7 @@ img{
     display: block;
     text-decoration: none;
     color: #FFF;
-    font-weight: bold;
+    font-weight: 700;
     float: left;
     text-align: right;
 }

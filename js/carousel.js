@@ -1,20 +1,23 @@
 
 function Carousel(config){
-    this.container = typeof config.container === "string" ? document.querySelector(config.container) : this.container;
     
-    this.itens = (typeof config.itens === "string") ? this.container.querySelectorAll(config.itens) : config.itens;
+    const {container, itens, btnPrev, btnNext} = config;
+    const _this = this;
     
-    this.btnPrev = (typeof config.btnPrev === "string") ? this.container.querySelector(config.btnPrev) : config.btnPrev;
+    this.container = (typeof container === "string") ? document.querySelector(container) : container;
     
-    this.btnNext = (typeof config.btnNext === "string") ? this.container.querySelector(config.btnNext) : config.btnNext;
+    this.itens = (typeof itens === "string") ? this.container.querySelectorAll(itens) : itens;
     
-    var _this = this;
-    var _currentSlide = 0;
+    this.btnPrev = (typeof btnPrev === "string") ? this.container.querySelector(btnPrev) : btnPrev;
+    
+    this.btnNext = (typeof btnNext === "string") ? this.container.querySelector(btnNext) : btnNext;
+    
+    let _currentSlide = 0;
     
     init();
     
     function init(){
-        var _show = _this.container.querySelectorAll(".show");
+        const _show = _this.container.querySelectorAll(".show");
         
         Array.prototype.forEach.call(_show, (sh) => {
             sh.classList.remove("show");
@@ -45,8 +48,8 @@ function Carousel(config){
     }
     
     function showSlide(){
-        var qtd = _this.itens.length;
-        var slide = _currentSlide % qtd;
+        let qtd = _this.itens.length;
+        let slide = _currentSlide % qtd;
         slide = Math.abs(slide);
         
         _this.container.querySelector(".show").classList.remove("show");

@@ -1,30 +1,32 @@
 
-var $body = document.querySelector("body");
+(function() {
 
-$body.classList.remove("no-js");
-$body.classList.add("js");
+    const $body = document.querySelector("body");
 
-var menu = new Menu({
-    container: ".header__nav",
-    toggleBtn: ".header__btnMenu",
-    widthEnabled: 979.99
-});
+    $body.classList.remove("no-js");
+    $body.classList.add("js");
 
-var carouselImgs = new Carousel({
-    container: ".laptop-slides .slideshow",
-    itens: "figure",
-    btnPrev: ".prev",
-    btnNext: ".next"
-});
+    const menu = new Menu({
+        container: ".header__nav",
+        toggleBtn: ".header__btnMenu",
+        widthEnabled: 979.99
+    });
 
-var carouselQuotes = new Carousel({
-    container: ".quote-slideshow",
-    itens: "figure",
-    btnPrev: ".prev",
-    btnNext: ".next"
-});
+    const carouselImgs = new Carousel({
+        container: ".laptop-slides .slideshow",
+        itens: "figure",
+        btnPrev: ".prev",
+        btnNext: ".next"
+    });
 
-
+    const carouselQuotes = new Carousel({
+        container: ".quote-slideshow",
+        itens: "figure",
+        btnPrev: ".prev",
+        btnNext: ".next"
+    });
+    
+})();
 
 
 

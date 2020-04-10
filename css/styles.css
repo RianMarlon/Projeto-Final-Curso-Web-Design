@@ -42,8 +42,12 @@ img{
     border: none;
 }
 
+.header__btnMenu{
+    cursor: pointer;
+}
+
 .js .header__nav{
-    transition: max-height 0s;
+    transition: max-height 0.5s;
 }
 
 .header__btnMenu .fas{
@@ -156,6 +160,7 @@ img{
 .people-cards__card:hover{
     outline: 8px solid #63C6AE;
     outline-offset: -5px;
+    cursor: pointer;
 }
 
 .people-cards__card:hover .people-cards__avatar img{

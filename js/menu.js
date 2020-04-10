@@ -1,22 +1,24 @@
 
 function Menu(config){
     
-    this.nav = (typeof config.container === "string") ? document.querySelector(config.container): config.container;
+    const {container, toggleBtn, widthEnabled = false} = config;
+    const _this = this;
     
-    this.btn = (typeof config.toggleBtn === "string") ? document.querySelector(config.toggleBtn): config.toggleBtn;
+    this.nav = (typeof container === "string") ? document.querySelector(container): container;
     
-    this.maxWidth = config.widthEnabled || false;
+    this.btn = (typeof toggleBtn === "string") ? document.querySelector(toggleBtn): toggleBtn;
     
-    var _opened = false;
-    var _this = this;
+    this.maxWidth = widthEnabled;
+    
+    let _opened = false;
     
     this.btn.removeAttribute("style");
     
     if (this.maxWidth){
     
         window.addEventListener("resize", () => {
-            if(window.innerWidth > this.maxWidth){
-                this.nav.removeAttribute("style");
+            if(window.innerWidth > _this.maxWidth){
+                _this.nav.removeAttribute("style");
                 _opened = false;
             }
             
@@ -47,7 +49,7 @@ function Menu(config){
     
     function openMenu(){
         
-        var _top = _this.nav.getBoundingClientRect().top + "px";
+        const _top = _this.nav.getBoundingClientRect().top + "px";
         
         /* Os atributos styles do javascript, serão transformados em atributos inline no HTML */
         _this.nav.style.maxHeight = "calc(100vh - " + _top + ")";

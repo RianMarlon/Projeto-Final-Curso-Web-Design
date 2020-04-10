@@ -42,7 +42,7 @@ img{
     border: none;
 }
 
-.header__btnMenu{
+.header__btnMenu:hover{
     cursor: pointer;
 }
 
